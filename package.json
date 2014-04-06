@@ -1,5 +1,5 @@
 {
-  "name": "ajaxsnapshots-expressjs",
+  "name": "ajs-express",
   "version": "0.0.0",
   "main": "lib/ajs-express.js",
   "description": "ExpressJS Middleware for AjaxSnapshots",
