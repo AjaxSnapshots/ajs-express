@@ -1,0 +1,4 @@
+/node_modules/
+npm-debug.log
+lib/index-ignore.js
+*.iml
