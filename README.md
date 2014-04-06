@@ -1,4 +1,4 @@
-expressjs-middleware
+ajs-express
 ====================
 
 ExpressJS Middleware for AjaxSnapshots
