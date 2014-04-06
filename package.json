@@ -22,8 +22,8 @@
   "files": [
     ""
   ],
-  "keywords":[
-    "seo","snapshot","angularjs","expressjs","crawlable","emberjs","backbonejs"
+  "keywords": [
+    "seo", "snapshot", "angularjs", "expressjs", "crawlable", "emberjs", "backbonejs"
   ],
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
