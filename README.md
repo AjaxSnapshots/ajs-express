@@ -5,4 +5,4 @@ Many modern websites have a substantial part of their HTML content generated in 
 
 Search engines like Google aren't good at indexing these sites because they don't run the Javascript before indexing their pages. Social network bots like those from Facebook and Twitter have similar problems when they try to create a preview of a shared page that is generated using Javascript.
 
-Fortunately Google came up with a solution to this problem: 
+Fortunately Google came up with a solution to this problem: [The Crawlable AJAX Specification](https://developers.google.com/webmasters/ajax-crawling/). This provides a _safe_ way for sites to provide Google with snapshots of their pages' HTML _after_ all necessary Javascript has run. This specification has been [widely adopted](blog.ajaxsnapshots.com/2013/11/googles-crawlable-ajax-specification.html) and is supported by Bing, Yandex and some social bots.
