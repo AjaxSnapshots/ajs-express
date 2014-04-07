@@ -4,7 +4,7 @@
   "main": "lib/ajs-express.js",
   "description": "ExpressJS Middleware for AjaxSnapshots",
   "homepage": "https://ajaxsnapshots.com",
-  "bugs": "https://github.com/AjaxSnapshots/ajaxsnapshots-expressjs/issues",
+  "bugs": "https://github.com/AjaxSnapshots/ajs-express/issues",
   "author": {
     "name": "AjaxSnapshots",
     "email": "support@ajaxsnapshots.com",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AjaxSnapshots/ajaxsnapshots-expressjs"
+    "url": "https://github.com/AjaxSnapshots/ajs-express"
   },
   "licenses": [
     {
@@ -20,7 +20,9 @@
     }
   ],
   "keywords": [
-    "seo", "snapshot", "angularjs", "expressjs", "crawlable", "emberjs", "backbonejs"
+    "seo", "snapshot", "angularjs", "expressjs",
+    "crawlable", "emberjs", "backbonejs", "ajax",
+    "google","bot"
   ],
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
