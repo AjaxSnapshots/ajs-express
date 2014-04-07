@@ -9,7 +9,7 @@ Fortunately Google came up with a solution to this problem: [The Crawlable AJAX 
 
 [AjaxSnapshots](https://ajaxsnapshots.com) makes it easy to start using the _The Crawlable AJAX Specification_ by providing a SaaS based implemention of that is easy to plug in at web server level. 
 
-This project provides ExpressJS Middleware that lets you add _The Crawlable AJAX Specification_ to a ExpressJS (on NodeJS) based website in a few lines of code.
+This project provides ExpressJS Middleware that lets you add _The Crawlable AJAX Specification_ to an ExpressJS (on NodeJS) based website in a few lines of code.
 
 ##SEO enabling and ExpressJS site
 
