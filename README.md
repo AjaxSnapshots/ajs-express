@@ -19,7 +19,7 @@ For full details see our [configuration guide](https://ajaxsnapshots.com/configG
 
 If your site uses __hash #__ based URLs like http://mysite.com#mypage change this so that you are using __hashbang #!__ URLs like http://mysite.com#!mypage instead. If you have sitemap.xml file make sure it contains the __hashbang__ URLs too.
 
-If your site uses hashless, e.g. _pushState()_ based URLs add the following header to all of you pages. (If you're not sure just add it - it wont do any harm)
+If your site uses hashless, e.g. `pushState()` based URLs add the following header to all of you pages. (If you're not sure just add it - it wont do any harm)
 
 ```html
 <meta content="!" name="fragment">
@@ -52,7 +52,7 @@ That's all!
 
 This section covers several other configuration options you can use. For a fuller discussion see our [API Documentation](https://ajaxsnapshots.com/apidocs).
 
-All configuration options are set using the __set__ method. This can take a key-value pair or a configuration object as follows:
+All configuration options are set using the `set` method. This can take a key-value pair or a configuration object as follows:
 
 ```js
 var ajs = require('ajs-express');
@@ -68,6 +68,17 @@ ajs.set({
 });
 
 ```
+
+The available configuration options are:
+
+* __apikey__ (mandatory) Your API Key (it's on your account page)
+* __snap-time__ This lets you specify how long in milliseconds we should wait after the page's onload event fires before we take the snapshot. Note that the snapshot will be taken earlier than this if either our on-page [Javascript API](https://ajaxsnapshots.com/apidocs#JavascriptAPI) is used to specify an exact time for the snapshot or 40 seconds has elapsed since we started loading your page.
+* __remove-hidden__ If true then all hidden elements in the page body except for scripts and stylesheets will be removed before returning the snapshot. The term hidden is defined as per the `:hidden` JQuery 2.0 selector, except that we do not remove `head`, `meta`, `link`, `style` or `title` elements.
+* __remove-selector__ If set this is should be a valid JQuery 2.0 selector. All matching elements on your page will be removed before returning the snapshot.
+* __device-width__ Sets the width in pixels of the headless browser used to render your page. Setting this can be important when you are using responsive pages that show different content at different page sizes.
+* __device-height__ Sets the height in pixels of the headless browser used to render your page. Setting this can be important when you are using responsive pages that show different content at different page sizes.
+
+
 
 
 
