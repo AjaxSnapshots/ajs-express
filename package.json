@@ -1,6 +1,6 @@
 {
   "name": "ajs-express",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/ajs-express.js",
   "description": "ExpressJS Middleware for AjaxSnapshots",
   "homepage": "https://ajaxsnapshots.com",
@@ -18,6 +18,9 @@
     {
       "type": "MIT"
     }
+  ],
+  "files": [
+    "lib","package.json","README.md"
   ],
   "keywords": [
     "seo", "snapshot", "angularjs", "expressjs",
