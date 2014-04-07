@@ -33,7 +33,7 @@ First install the AjaxSnapshots ExpressJS module
 $ npm install ajs-express --save
 ```
 
-Then in your ExpressJS code import the module, configure it with your API Key (from your account page) and _use_ the middleware. This code goes in your ExpressJS routing file - usually called express.js
+Then in your ExpressJS code import the module, configure it with your API Key (from your account page) and _use_ the middleware. 
 
 ```js
 var ajs = require('ajs-express');
@@ -44,8 +44,33 @@ ajs.set('apikey','put-your-apikey-here');
 //use the middleware (add this to your app early to make sure 
 //everything that should be snapshotted is)
 app.use(ajs);
+```
+
+That's all!
+
+####Configuration Options
+
+This section covers several other configuration options you can use. For a fuller discussion see our [API Documentation](https://ajaxsnapshots.com/apidocs).
+
+All configuration options are set using the __set__ method. This can take a key-value pair or a configuration object as follows:
+
+```js
+var ajs = require('ajs-express');
+
+//name value based configuration
+ajs.set('foo','bar');
+ajs.set('baz','elf');
+
+//equivalent configuration object based configuration
+ajs.set({
+  foo:'bar',
+  baz:'elf'
+})
 
 ```
+
+
+
 
 
 
