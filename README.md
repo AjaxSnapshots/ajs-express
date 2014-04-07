@@ -57,15 +57,15 @@ All configuration options are set using the __set__ method. This can take a key-
 ```js
 var ajs = require('ajs-express');
 
-//name value based configuration
+//key-value based configuration
 ajs.set('foo','bar');
 ajs.set('baz','elf');
 
-//equivalent configuration object based configuration
+//equivalent config-object based configuration
 ajs.set({
   foo:'bar',
   baz:'elf'
-})
+});
 
 ```
 
