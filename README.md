@@ -7,7 +7,7 @@ Search engines like Google aren't good at indexing these sites because they don'
 
 Fortunately Google came up with a solution to this problem: [The Crawlable AJAX Specification](https://developers.google.com/webmasters/ajax-crawling/). This provides a _safe_ way for sites to provide Google with snapshots of their pages' HTML _after_ all necessary Javascript has run. This specification has been [widely adopted](blog.ajaxsnapshots.com/2013/11/googles-crawlable-ajax-specification.html) and is supported by Bing, Yandex and some social bots.
 
-[AjaxSnapshots](https://ajaxsnapshots.com) makes it easy to start using the _The Crawlable AJAX Specification_ by providing a SaaS based implemention of that is easy to plug in at web server level. 
+[AjaxSnapshots](https://ajaxsnapshots.com) makes it easy to start using the _The Crawlable AJAX Specification_ by providing a SaaS based implemention that's easy to plug in at web server level. 
 
 This project provides ExpressJS Middleware that lets you add _The Crawlable AJAX Specification_ to an ExpressJS (on NodeJS) based website in a few lines of code.
 
@@ -17,9 +17,9 @@ This project provides ExpressJS Middleware that lets you add _The Crawlable AJAX
 
 For full details see our [configuration guide](https://ajaxsnapshots.com/configGuide). Here is a summary of the prerequisites.
 
-If your site uses __hash #__ based URLs like http://mysite.com#mypage change this so that you are using __hashbang #!__ URLs like http://mysite.com#!mypage instead. If you have sitemap.xml file make sure it contains the __hashbang__ URLs too.
+If your site uses __hash #__ based URLs like http://mysite.com#mypage change this so that you are using __hashbang #!__ URLs like http://mysite.com#!mypage instead. If you have sitemap.xml file make sure it contains the __hashbang__ URLs too, rathe than the old _hash_ based ones.
 
-If your site uses hashless, e.g. `pushState()` based URLs add the following header to all of you pages. (If you're not sure just add it - it wont do any harm)
+If your site uses hashless, e.g. `pushState()` based URLs add the following header to all of you pages.
 
 ```html
 <meta content="!" name="fragment">
